@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>最新成交 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/new.css">
+
+</head>
+
+<body>
+  <section class="new mid-wrap">
+    <div class="new__notify">
+      <ul class="list">
+        <li class="item">恭喜 188****0292 以 &yen;6.60 拍到iphone X</li>
+      </ul>
+    </div>
+    <ul class="new__list">
+      <li class="new__item">
+        <div class="new__img"><img src="" alt=""></div>
+        <div class="new__info">
+          <p>成交人：我的昵称</p>
+          <p>用户ID：123123123</p>
+          <p>拍卖价：&yen;12.12</p>
+        </div>
+        <div class="new__oper">
+          <p>2017-09-20 17:38:51</p>
+          <p>节省<span>90.1%</span></p>
+          <a href="" class="btn">参与竞拍</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/new.js"></script>
+</body>
+
+</html>
