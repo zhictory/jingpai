@@ -1,0 +1,21 @@
+/* 主体居中 */
+.mid-wrap {
+  margin: 0 auto;
+  width: 7.5rem;
+}
+/* 主要样式 */
+body {
+  font-size: 0.24rem;
+}
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1;
+  &:after {  
+    content: "";  
+    display: table;  
+    line-height: 0;  
+  }
+  &:after {  
+    clear: both; 
+  }
+}

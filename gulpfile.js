@@ -6,7 +6,13 @@ var fileinclude = require('gulp-file-include');
 gulp.watch('./src/views/**/*.scss', function (event) {
   return gulp.src(event.path)
     .pipe(sass())
-    .pipe(gulp.dest('./dev/style'));
+    .pipe(gulp.dest('./dev/css'));
+});
+
+gulp.watch('./src/widgets/*.scss', function (event) {
+  return gulp.src(event.path)
+    .pipe(sass())
+    .pipe(gulp.dest('./dev/css'));
 });
 
 gulp.watch('./src/views/**/*.html', function (event) {
@@ -21,4 +27,8 @@ gulp.watch('./src/views/**/*.html', function (event) {
 gulp.watch('./src/views/**/*.js', function (event) {
   return gulp.src(event.path)
     .pipe(gulp.dest('./dev/js'));
+});
+gulp.watch('./src/libs/*.js', function (event) {
+  return gulp.src(event.path)
+    .pipe(gulp.dest('./dev/libs'));
 });

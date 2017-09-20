@@ -1,0 +1,32 @@
+<!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>@@title</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/@@cssname.css">

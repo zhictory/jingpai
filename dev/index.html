@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>首页 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+  <section class="index mid-wrap">
+    <div class="index__slider" id="j_indexSlider">
+      <div class="bd">
+        <div><a href=""><img src="http://www.yeedee.com.cn/upload/f775d94e-8eb1-4fa1-8a5a-218b41804349.JPG" alt=""></a></div>
+        <div><a href=""><img src="http://www.yeedee.com.cn/upload/ef275510-aea7-4662-ba97-a5b66c248593.JPG" alt=""></a></div>
+      </div>
+      <div class="hd">
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div class="index__entry">
+      <a href="" class="index__entry-item"><img src="" alt="">十元专区</a>
+      <a href="" class="index__entry-item"><img src="" alt="">充值</a>
+      <a href="" class="index__entry-item"><img src="" alt="">晒单</a>
+      <a href="" class="index__entry-item"><img src="" alt="">帮助</a>
+    </div>
+    <div class="index__notify" id="j_indexNotify">
+      <ul class="list">
+        <li class="item">恭喜 188****0292 以 &yen;6.60 拍到iphone X</li>
+      </ul>
+    </div>
+    <div class="index__hot">
+      <a href="" class="index__hot-goods">
+        <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+        <span class="yen">&yen;7.20</span>
+        <span>这是我昵称</span>
+      </a>
+      <a href="" class="index__hot-goods">
+        <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+        <span class="yen">&yen;7.20</span>
+        <span>这是我昵称</span>
+      </a>
+      <a href="" class="index__hot-goods">
+        <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+        <span class="yen">&yen;7.20</span>
+        <span>这是我昵称</span>
+      </a>
+    </div>
+    <div class="index__auction">
+      <div class="index__auction-tab">
+        <a href="" class="on">正在热拍</a>
+        <a href="">我在拍</a>
+        <a href="">我的收藏</a>
+      </div>
+      <ul class="index__auction-list">
+        <li class="index__auction-item index__auction-item--on">
+          <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+          <span class="time">14:51:11</span>
+          <span class="price">&yen;1212.00</span>
+          <span class="name">我的用户名</span>
+          <a href="" class="btn">参与竞拍</a>
+        </li>
+        <li class="index__auction-item">
+          <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+          <span class="time">14:51:11</span>
+          <span class="price">&yen;1212.00</span>
+          <span class="name">我的用户名</span>
+          <span class="btn">竞拍结束</span>
+        </li>
+        <li class="index__auction-item">
+          <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+          <span class="time">14:51:11</span>
+          <span class="price">&yen;1212.00</span>
+          <span class="name">我的用户名</span>
+          <span class="btn">竞拍结束</span>
+        </li>
+      </ul>
+    </div>
+    <div class="index__load">我是有底线的</div>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
