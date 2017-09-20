@@ -22,13 +22,67 @@ body {
   .clearfix:after {
     clear: both; }
 
-.new__notify {
-  padding: .1rem 0;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
-  background: #fff;
-  font-size: 0.28rem;
-  text-indent: 2em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
+.new {
+  background: #f5f3f2; }
+  .new__notify {
+    padding: .1rem 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background: #fff;
+    font-size: 0.28rem;
+    text-indent: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .new__list {
+    padding: 0 .2rem;
+    background: #fff; }
+  .new__item {
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #ebebeb;
+    padding: .3rem 0;
+    background: #fff; }
+  .new__info {
+    margin-left: .1rem;
+    width: 3rem;
+    line-height: 0.36rem;
+    font-size: 0.26rem; }
+  .new__oper {
+    line-height: 0.42rem;
+    text-align: right; }
+    .new__oper .btn {
+      display: inline-block;
+      margin: .4rem auto 0;
+      width: 90%;
+      height: 0.5rem;
+      line-height: 0.5rem;
+      text-align: center;
+      background: red;
+      color: #fff; }
+    .new__oper .time {
+      font-size: 0.24rem; }
+    .new__oper .discount {
+      flex: 1;
+      margin-top: .1rem;
+      font-size: 0.24rem; }
+      .new__oper .discount em {
+        margin-left: .1rem;
+        font-size: 0.6rem;
+        vertical-align: sub; }
+  .new__img {
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden; }
+    .new__img img {
+      width: 100%;
+      vertical-align: bottom; }
+  .new__load {
+    position: relative;
+    top: -1px;
+    border-top: 1px solid #ebebeb;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #000;
+    font-size: 0.24rem; }
