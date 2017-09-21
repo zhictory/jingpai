@@ -6,6 +6,7 @@
  *-----------------*/
 @import '../../widgets/common';
 @import '../../widgets/nav';
+@import '../../widgets/header';
 
 .new {
   background: #f5f3f2;
@@ -72,15 +73,5 @@
       width: 100%;
       vertical-align: bottom;
     }
-  }
-  &__load {
-    position: relative;
-    top: -1px;
-    border-top: 1px solid #ebebeb;
-    height: 1rem;
-    line-height: 1rem;
-    text-align: center;
-    color: #000;
-    font-size: 0.24rem;
   }
 }

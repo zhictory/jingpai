@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-09-20
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.list {
+  display: flex;
+  height: 100%;
+  background: #f5f3f2;
+  &__left {
+    float: left;
+    width: 2rem;
+    height: 100%;
+    overflow: auto;
+  }
+  &__cate {
+    &-list {
+
+    }
+    &-item {
+      border-bottom: 1px solid #e7e7e7;
+      text-align: center;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      background: #fff;
+      &--on {
+        background: transparent;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        color: #000;
+      }
+    }
+  }
+  &__right {
+    float: right;
+    flex: 1;
+    margin-left: .15rem;
+    height: 100%;
+    overflow: auto;
+  }
+  &__goods {
+    &-list {
+
+    }
+    &-item {
+      display: flex;
+      border-bottom: 1px solid #e7e7e7;
+      background: #ffffff;
+    }
+  }
+  &__img {
+    width: 2.2rem;
+    height: 2.2rem;
+    box-sizing: border-box;
+    padding: .2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom;
+    }
+  }
+  &__info {
+    width: 2.9rem;
+    &-name {
+      margin: .3rem 0;
+    }
+    &-oper {
+      color: red;
+      .btn {
+        display: inline-block;
+        margin-left: .4rem;
+        width: 1.2rem;
+        height: 0.55rem;
+        line-height: 0.55rem;
+        background: red;
+        vertical-align: middle;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}

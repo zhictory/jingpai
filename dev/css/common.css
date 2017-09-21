@@ -2,6 +2,7 @@
 /* 主体居中 */
 .mid-wrap {
   margin: 0 auto;
+  padding-top: .9rem;
   width: 7.5rem; }
 
 /* 主要样式 */
@@ -17,3 +18,14 @@ body {
     line-height: 0; }
   .clearfix:after {
     clear: both; }
+
+/* 加载更多 */
+.more-load {
+  position: relative;
+  top: -1px;
+  border-top: 1px solid #ebebeb;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.24rem; }

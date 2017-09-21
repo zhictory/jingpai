@@ -2,12 +2,47 @@
 <html lang="zh-CN">
 
 <head>
-  @@include("head.html", { "title": "我的 | 竞拍", "cssname": "member" })
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>我的 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/member.css">
+
 </head>
 
 <body>
   <section class="member mid-wrap">
-    @@include("header.html", { "nav" : 4 })
+    <header class="main-header">
+  <div class="main-header__title">    个人中心  </div>
+  <a href="./index.html" class="main-header__home">首页</a>
+</header>
     <div class="member__user">
       <div class="portrait"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
       <div class="name"><p>大胜</p><p>ID：123123123</p></div>
@@ -63,10 +98,17 @@
       <div class="title"><a href="">设置</a></div>
     </div>
     <div class="member__tips">声明：所有奖品、竞拍活动与苹果公司（Apple Inc.）无关</div>
-    @@include("nav.html", { "nav" : 4 })
+    <nav class="main-nav">
+  <a href="./index.html" class="main-nav__item ">首页</a>
+  <a href="./new.html" class="main-nav__item ">最新成交</a>
+  <a href="./list.html" class="main-nav__item ">分类</a>
+  <a href="./member.html" class="main-nav__item main-nav__item--on">我的</a>
+</nav>
   </section>
   <!-- script -->
-  @@include("script.html", { "jsname": "member"})
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/member.js"></script>
 </body>
 
 </html>

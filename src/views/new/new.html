@@ -7,6 +7,7 @@
 
 <body>
   <section class="new mid-wrap">
+    @@include("header.html", { "nav" : 2 })
     <div class="new__notify">
       <ul class="list">
         <li class="item">恭喜 188****0292 以 &yen;6.60 拍到iphone X</li>
@@ -23,7 +24,7 @@
         <div class="new__oper">
           <p class="time">2017-09-20 17:38</p>
           <p class="discount">节省<em>90.1%</em></p>
-          <a href="" class="btn">参与竞拍</a>
+          <a href="./item.html" class="btn">参与竞拍</a>
         </div>
       </li>
       <li class="new__item">
@@ -36,7 +37,7 @@
         <div class="new__oper">
           <p class="time">2017-09-20 17:38</p>
           <p class="discount">节省<em>90.1%</em></p>
-          <a href="" class="btn">参与竞拍</a>
+          <a href="./item.html" class="btn">参与竞拍</a>
         </div>
       </li>
       <li class="new__item">
@@ -49,7 +50,7 @@
         <div class="new__oper">
           <p class="time">2017-09-20 17:38</p>
           <p class="discount">节省<em>90.1%</em></p>
-          <a href="" class="btn">参与竞拍</a>
+          <a href="./item.html" class="btn">参与竞拍</a>
         </div>
       </li>
       <li class="new__item">
@@ -62,11 +63,12 @@
         <div class="new__oper">
           <p class="time">2017-09-20 17:38</p>
           <p class="discount">节省<em>90.1%</em></p>
-          <a href="" class="btn">参与竞拍</a>
+          <a href="./item.html" class="btn">参与竞拍</a>
         </div>
       </li>
     </ul>
-    <div class="new__load">我是有底线的</div>
+    <div class="more-load">我是有底线的</div>
+    @@include("nav.html", { "nav" : 2 })
   </section>
   <!-- script -->
   @@include("script.html", { "jsname": "new"})
