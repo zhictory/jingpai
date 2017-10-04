@@ -6,12 +6,11 @@
 /* 主体居中 */
 .mid-wrap {
   margin: 0 auto;
-  padding-top: .9rem;
   width: 7.5rem; }
 
 /* 主要样式 */
 body {
-  font-size: 0.24rem; }
+  font-size: 0.26rem; }
 
 /* 清除浮动 */
 .clearfix {
@@ -53,19 +52,35 @@ body {
       color: red; }
 
 .main-header {
-  position: fixed;
-  z-index: 900;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   text-align: center;
-  height: 0.9rem;
-  line-height: 0.9rem;
+  height: 1rem;
+  line-height: 1rem;
   background: #ff2d4a;
   font-size: 0.36rem; }
   .main-header__title {
     color: #fff; }
   .main-header__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.9rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+.sub-header {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  text-align: center;
+  height: .8rem;
+  line-height: .8rem;
+  background: #fff;
+  font-size: 0.32rem; }
+  .sub-header__title {
+    color: #000; }
+  .sub-header__home {
     position: absolute;
     right: 0;
     top: 0;
@@ -277,10 +292,11 @@ body {
   .item__evaluate-right {
     flex: 1; }
   .item__evaluate-name {
-    line-height: .8rem; }
+    line-height: .26rem;
+    margin: .4rem 0 .2rem; }
     .item__evaluate-name .time {
       float: right;
-      margin-right: .2rem;
+      margin-right: 2em;
       font-size: 0.2rem; }
   .item__evaluate-ct {
     margin-bottom: .2rem;

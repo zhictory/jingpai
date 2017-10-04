@@ -186,7 +186,7 @@
       }
     }
   }
-    &__item {
+  &__item {
     display: flex;
     flex-wrap: nowrap;
     border-bottom: 1px solid #ebebeb;
@@ -257,10 +257,11 @@
       flex: 1;
     }
     &-name {
-      line-height: .8rem;
+      line-height: .26rem;
+      margin: .4rem 0 .2rem;
       .time {
         float: right;
-        margin-right: .2rem;
+        margin-right: 2em;
         font-size: 0.2rem;
       }
     }
