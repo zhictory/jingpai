@@ -10,7 +10,7 @@
 
 /* 主要样式 */
 body {
-  font-size: 0.24rem; }
+  font-size: 0.26rem; }
 
 /* 清除浮动 */
 .clearfix {
@@ -88,46 +88,71 @@ body {
     color: #fff;
     font-size: 0.24rem; }
 
-.special {
-  background: #fff; }
-  .special__list {
-    display: flex;
-    flex-wrap: wrap; }
-  .special__item {
-    width: 50%;
-    box-sizing: border-box;
-    padding: .3rem 0;
+.recharge {
+  background: #f5f3f2;
+  padding-bottom: 2rem; }
+  .recharge__tt {
+    color: #8c8c8c;
+    font-size: 0.2rem;
+    height: 0.7rem;
+    line-height: 0.9rem;
+    text-indent: 1em; }
+  .recharge__money {
+    padding-top: .3rem;
+    border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
-    text-align: center;
-    font-size: 0.28rem;
-    line-height: 0.4rem; }
-    .special__item:nth-child(2n-1) {
-      border-right: 1px solid #ebebeb; }
-    .special__item img,
-    .special__item span {
+    background: #fff;
+    font-size: 0;
+    text-align: center; }
+    .recharge__money-item {
       display: inline-block;
-      width: 100%;
-      vertical-align: bottom;
-      text-align: center; }
-    .special__item img {
-      width: 80%; }
-    .special__item .price,
-    .special__item .time {
-      color: red; }
-    .special__item .time {
-      margin-top: .1rem; }
-    .special__item .price {
-      font-size: 0.24rem; }
-    .special__item .name {
+      border: 1px solid #ebebeb;
+      margin: 0 .15rem .3rem;
+      width: 2rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      font-size: 0.36rem;
       color: #000; }
-    .special__item .btn {
-      display: block;
-      margin: .2rem auto 0;
-      width: 80%;
-      height: 0.6rem;
-      color: #fff;
-      font-size: 0.32rem;
-      background: #8c8c8c;
-      line-height: 0.6rem; }
-    .special__item--on .btn {
-      background: red; }
+      .recharge__money-item input {
+        display: inline-block;
+        width: 80%;
+        text-align: center; }
+      .recharge__money-item--on {
+        border-color: #ff2d4a; }
+  .recharge__result {
+    background: #fff;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-indent: 1em; }
+  .recharge__price {
+    float: right;
+    margin-right: 1em;
+    color: #ff2d4a; }
+  .recharge__way-item {
+    border-bottom: 1px solid #ebebeb;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-indent: 1em;
+    background: #fff; }
+    .recharge__way-item::first-child {
+      border-top: 1px solid #ebebeb; }
+  .recharge__protocol {
+    height: 1rem;
+    line-height: 1.2rem;
+    text-indent: 1em; }
+    .recharge__protocol a {
+      color: #ff2d4a; }
+    .recharge__protocol input[type=checkbox] {
+      margin-right: .1rem;
+      vertical-align: middle;
+      background: #fff; }
+  .recharge__submit {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ff2d4a;
+    color: #fff;
+    text-align: center; }

@@ -2,12 +2,11 @@
 /* 主体居中 */
 .mid-wrap {
   margin: 0 auto;
-  padding-top: 1rem;
   width: 7.5rem; }
 
 /* 主要样式 */
 body {
-  font-size: 0.24rem; }
+  font-size: 0.26rem; }
 
 /* 清除浮动 */
 .clearfix {

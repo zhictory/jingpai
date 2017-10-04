@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-04
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.recharge {
+  background: #f5f3f2;
+  padding-bottom: 2rem;
+  &__tt {
+    color: #8c8c8c;
+    font-size: 0.2rem;
+    height: 0.7rem;
+    line-height: 0.9rem;
+    text-indent: 1em;
+  }
+  &__money {
+    padding-top: .3rem;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background: #fff;
+    font-size: 0;
+    text-align: center;
+    &-item {
+      display: inline-block;
+      border: 1px solid #ebebeb;
+      margin: 0 .15rem .3rem;
+      width: 2rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      font-size: 0.36rem;
+      color: #000;
+      input {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+      }
+      &--on {
+        border-color: #ff2d4a;
+      }
+    }
+  }
+  &__result {
+    background: #fff;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-indent: 1em;
+  }
+  &__price {
+    float: right;
+    margin-right: 1em;
+    color: #ff2d4a;
+  }
+  &__way {
+    &-item {
+      border-bottom: 1px solid #ebebeb;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      text-indent: 1em;
+      background: #fff;
+      &::first-child {
+        border-top: 1px solid #ebebeb;
+      }
+    }
+  }
+  &__protocol {
+    height: 1rem;
+    line-height: 1.2rem;
+    text-indent: 1em;
+    a {
+      color: #ff2d4a;
+    }
+    input[type=checkbox] {
+      margin-right: .1rem;
+      vertical-align: middle;
+      background: #fff;
+    }
+  }
+  &__submit {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ff2d4a;
+    color: #fff;
+    text-align: center;
+  }
+}
