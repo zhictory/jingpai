@@ -6,7 +6,7 @@
 /* 主体居中 */
 .mid-wrap {
   margin: 0 auto;
-  padding-top: .9rem;
+  padding-top: 1rem;
   width: 7.5rem; }
 
 /* 主要样式 */
@@ -59,8 +59,8 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  height: 0.9rem;
-  line-height: 0.9rem;
+  height: 1rem;
+  line-height: 1rem;
   background: #ff2d4a;
   font-size: 0.36rem; }
   .main-header__title {
@@ -153,7 +153,7 @@ body {
       border-bottom: 1px solid #ebebeb;
       text-align: center;
       font-size: 0.28rem;
-      line-height: 0.54rem; }
+      line-height: 0.4rem; }
       .index__auction-item:nth-child(2n-1) {
         border-right: 1px solid #ebebeb; }
       .index__auction-item img,
@@ -162,6 +162,8 @@ body {
         width: 100%;
         vertical-align: bottom;
         text-align: center; }
+      .index__auction-item img {
+        width: 80%; }
       .index__auction-item .price,
       .index__auction-item .time {
         color: red; }

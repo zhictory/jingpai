@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-04
+ *-----------------*/
+/* 主体居中 */
+.mid-wrap {
+  margin: 0 auto;
+  padding-top: 1rem;
+  width: 7.5rem; }
+
+/* 主要样式 */
+body {
+  font-size: 0.24rem; }
+
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0; }
+  .clearfix:after {
+    clear: both; }
+
+/* 加载更多 */
+.more-load {
+  position: relative;
+  top: -1px;
+  border-top: 1px solid #ebebeb;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.24rem; }
+
+.main-nav {
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  background: #f5f3f2; }
+  .main-nav__item {
+    flex: 1;
+    text-align: center;
+    height: .9rem;
+    line-height: .9rem;
+    color: #000; }
+    .main-nav__item--on {
+      color: red; }
+
+.main-header {
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  background: #ff2d4a;
+  font-size: 0.36rem; }
+  .main-header__title {
+    color: #fff; }
+  .main-header__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.9rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+.special {
+  background: #fff; }
+  .special__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .special__item {
+    width: 50%;
+    box-sizing: border-box;
+    padding: .3rem 0;
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    font-size: 0.28rem;
+    line-height: 0.4rem; }
+    .special__item:nth-child(2n-1) {
+      border-right: 1px solid #ebebeb; }
+    .special__item img,
+    .special__item span {
+      display: inline-block;
+      width: 100%;
+      vertical-align: bottom;
+      text-align: center; }
+    .special__item img {
+      width: 80%; }
+    .special__item .price,
+    .special__item .time {
+      color: red; }
+    .special__item .time {
+      margin-top: .1rem; }
+    .special__item .price {
+      font-size: 0.24rem; }
+    .special__item .name {
+      color: #000; }
+    .special__item .btn {
+      display: block;
+      margin: .2rem auto 0;
+      width: 80%;
+      height: 0.6rem;
+      color: #fff;
+      font-size: 0.32rem;
+      background: #8c8c8c;
+      line-height: 0.6rem; }
+    .special__item--on .btn {
+      background: red; }

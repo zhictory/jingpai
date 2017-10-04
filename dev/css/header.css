@@ -8,16 +8,13 @@
   height: 1rem;
   line-height: 1rem;
   background: #ff2d4a;
-  font-size: 0.36rem;
-  &__title {
-    color: #fff;
-  }
-  &__home {
+  font-size: 0.36rem; }
+  .main-header__title {
+    color: #fff; }
+  .main-header__home {
     position: absolute;
     right: 0;
     top: 0;
     width: 0.9rem;
     color: #fff;
-    font-size: 0.24rem;
-  }
-}
+    font-size: 0.24rem; }

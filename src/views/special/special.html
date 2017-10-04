@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "专区 | 竞拍", "cssname": "special" })
+</head>
+
+<body>
+  <section class="special mid-wrap">
+    @@include("header.html", { "nav" : 6 })
+    <ul class="special__list">
+      <li class="special__item special__item--on">
+        <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+        <span class="time">14:51:11</span>
+        <span class="price">&yen;1212.00</span>
+        <span class="name">我的用户名</span>
+        <a href="./item.html" class="btn">参与竞拍</a>
+      </li>
+      <li class="special__item">
+        <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+        <span class="time">14:51:11</span>
+        <span class="price">&yen;1212.00</span>
+        <span class="name">我的用户名</span>
+        <span class="btn">竞拍结束</span>
+      </li>
+      <li class="special__item">
+        <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
+        <span class="time">14:51:11</span>
+        <span class="price">&yen;1212.00</span>
+        <span class="name">我的用户名</span>
+        <span class="btn">竞拍结束</span>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "special"})
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-04
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.special {
+  background: #fff;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;      
+  }
+  &__item {
+    width: 50%;
+    box-sizing: border-box;
+    padding: .3rem 0;
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    &:nth-child(2n-1) {
+      border-right: 1px solid #ebebeb;
+    }
+    img,
+    span {
+      display: inline-block;
+      width: 100%;
+      vertical-align: bottom;
+      text-align: center;
+    }
+    img {
+      width: 80%;
+    }
+    .price,
+    .time {
+      color: red;
+    }
+    .time {
+      margin-top: .1rem;
+    }
+    .price {
+      font-size: 0.24rem;
+    }
+    .name {
+      color: #000;
+    }
+    .btn {
+      display: block;
+      margin: .2rem auto 0;
+      width: 80%;
+      height: 0.6rem;
+      color: #fff;
+      font-size: 0.32rem;
+      background: #8c8c8c;
+      line-height: 0.6rem;
+    }
+    &--on {
+      .btn {
+        background: red;
+      }
+    }
+  }
+}
