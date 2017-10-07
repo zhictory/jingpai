@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-07
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.evaluate-mine {
+  background: #f5f3f2;
+  height: 100vh;
+  .none {
+    margin: 2rem 0 .5rem;
+    text-align: center;
+  }
+  .link {
+    border: 1px solid #ff2d4a;
+    margin: 0 auto;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    a {
+      color: #ff2d4a;
+    }
+  }
+}
