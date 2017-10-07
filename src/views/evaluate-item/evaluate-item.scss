@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-04
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.evaluate-item {
+  background: #f5f3f2;
+  &__goods {
+    display: flex;
+    background: #fff;
+    .img-wrap {
+      box-sizing: border-box;
+      padding: .2rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .name-wrap {
+      flex: 1;
+      box-sizing: border-box;
+      padding: .2rem 0;
+    }
+    .time {
+      font-size: 0.24rem;
+      line-height: 0.5rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom;
+    }
+  }
+  &__detail {
+    margin-top: .2rem;
+    background: #fff;
+    overflow: hidden;
+    p {
+      margin: .4rem auto;
+      width: 90%;
+      line-height: 0.42rem;
+    }
+    img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+  }
+}
