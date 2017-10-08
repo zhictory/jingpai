@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "我的竞拍 | 竞拍", "cssname": "auction" })
+</head>
+
+<body>
+  <section class="auction mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "我的竞拍" })
+    <nav class="auction__nav">
+      <div class="auction__nav-item auction__nav-item--on"><a href="">全部</a></div>
+      <div class="auction__nav-item"><a href="">我在拍</a></div>
+      <div class="auction__nav-item"><a href="">我拍中</a></div>
+      <div class="auction__nav-item"><a href="">差价购</a></div>
+      <div class="auction__nav-item"><a href="">待付款</a></div>
+    </nav>
+    <ul class="auction__list">
+      <li class="auction__item">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成效价：￥90.00</p>
+            <p>成交人：我是谁</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <span>已返0购物币</span>
+          <a href="">差价购买</a>
+        </div>
+      </li>
+      <li class="auction__item">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成效价：￥90.00</p>
+            <p>成交人：我是谁</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <span>已返0购物币</span>
+          <a href="">差价购买</a>
+        </div>
+      </li>
+      <li class="auction__item">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成效价：￥90.00</p>
+            <p>成交人：我是谁</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <span>已返0购物币</span>
+          <a href="">差价购买</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "auction"})
+</body>
+
+</html>

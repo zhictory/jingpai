@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-08
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.bind {
+  background: #f5f3f2;
+  &__tips {
+    height: 1rem;
+    line-height: 1rem;
+    text-indent: 1em;
+  }
+  &__form {
+    background: #fff;
+  }
+  &__form-item {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    min-height: 1rem;
+    line-height: 1rem;
+    label {
+      min-width: 2rem;
+      text-indent: 1em;
+    }
+    input {
+      flex: 1;
+      margin-left: .2rem;
+      border-radius: 0;
+    }
+    .input-1 {
+      flex: none;
+      width: 3rem;
+    }
+  }
+  &__code {
+    margin: 0 .3rem;
+    width: 2rem;
+    color: #ff2d4a;
+  }
+  input[type=submit] {
+    -webkit-appearance: none;
+    display: block;
+    border-radius: 0;
+    margin: 1rem auto;
+    width: 80%;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ff2d4a;
+    color: #fff;
+    text-align: center;        
+  }
+}

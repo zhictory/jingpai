@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "我的财产 | 竞拍", "cssname": "wallet" })
+</head>
+
+<body>
+  <section class="wallet mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "我的财产" })
+    <div class="wallet__info">
+      <ul class="list">
+        <li class="item">拍币<br/>0</li>
+        <li class="item">赠币<br/>0</li>
+        <li class="item">购物币<br/>0</li>
+      </ul>
+    </div>
+    <div class="wallet__detail">
+      <nav class="wallet__nav">
+        <div class="wallet__nav-item wallet__nav-item--on"><a href="">支出明细</a></div>
+        <div class="wallet__nav-item"><a href="">收益明细</a></div>
+      </nav>
+      <ul class="wallet__list">
+        <li class="wallet__item">
+          <div class="wallet__wrap-1"><span class="wallet__wrap-2">赠币竞拍消费</span><span class="wallet__wrap-3">2017-10-8 18:58</span></div>
+          <div class="wallet__wrap-1"><span class="wallet__wrap-4">已消费5赠币</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "wallet"})
+</body>
+
+</html>

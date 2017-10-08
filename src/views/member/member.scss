@@ -10,6 +10,13 @@
 
 .member {
   background: #f5f3f2;
+  padding-bottom: 1.1rem;
+  &__link {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
   &__tips {
     position: relative;
     top: -1px;
@@ -50,7 +57,7 @@
     .name {
       text-indent: 1em;
       p {
-        margin: .2rem 0;
+        margin: .1rem 0;
       }
     }
   }

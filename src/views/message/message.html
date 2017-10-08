@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "客服中心 | 竞拍", "cssname": "message" })
+</head>
+
+<body>
+  <section class="message mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "<nav class='message__nav'><div class='message__nav-item message__nav-item--on j_nav1'>消息</div><div class='message__nav-item j_nav2'>公告</div></nav>" })
+    <ul class="message__list j_nav1">
+      <li class="message__item">
+        <a href=""></a>
+        <p class="message__item-name">消费提醒</p>
+        <p class="message__item-time">2017-10-8 16:44</p>
+      </li>
+    </ul>
+    <ul class="message__list j_nav2 hidden">
+      <li class="message__item">
+        <a href=""></a>
+        <p class="message__item-name">消费提醒</p>
+        <p class="message__item-time">2017-10-8 16:44</p>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "message"})
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-08
+ *-----------------*/
+/* 主体居中 */
+.mid-wrap {
+  margin: 0 auto;
+  width: 7.5rem; }
+
+/* 主要样式 */
+body {
+  font-size: 0.3rem; }
+
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0; }
+  .clearfix:after {
+    clear: both; }
+
+/* 加载更多 */
+.more-load {
+  position: relative;
+  top: -1px;
+  border-top: 1px solid #ebebeb;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.24rem; }
+
+.hidden {
+  display: none; }
+
+.main-nav {
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  background: #f5f3f2; }
+  .main-nav__item {
+    flex: 1;
+    text-align: center;
+    height: .9rem;
+    line-height: .9rem;
+    color: #000; }
+    .main-nav__item--on {
+      color: red; }
+
+.main-header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  background: #ff2d4a;
+  font-size: 0.36rem; }
+  .main-header__title {
+    color: #fff; }
+  .main-header__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.9rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+.sub-header {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  text-align: center;
+  height: .8rem;
+  line-height: .8rem;
+  background: #fff;
+  font-size: 0.32rem; }
+  .sub-header__title {
+    color: #000; }
+  .sub-header__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.9rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+.goback {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1rem;
+  line-height: .8rem;
+  color: #000;
+  font-size: .6rem;
+  text-align: center; }
+
+.wallet {
+  background: #f5f3f2;
+  min-height: 100vh; }
+  .wallet__info {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    background: #fff; }
+    .wallet__info .list {
+      display: flex; }
+    .wallet__info .item {
+      flex: 1;
+      margin: .3rem 0 .2rem;
+      text-align: center;
+      line-height: 0.4rem; }
+  .wallet__detail {
+    margin-top: .2rem;
+    background: #fff; }
+  .wallet__nav {
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    height: .8rem;
+    line-height: .8rem; }
+    .wallet__nav a {
+      display: inline-block;
+      width: 100%;
+      color: #000; }
+    .wallet__nav-item {
+      flex: 1;
+      text-align: center; }
+      .wallet__nav-item--on {
+        color: #ff2d4a; }
+        .wallet__nav-item--on a {
+          color: #ff2d4a; }
+  .wallet__item {
+    display: flex;
+    height: 1.5rem;
+    border: 1px solid #ebebeb;
+    border-top: none; }
+    .wallet__item:first-child {
+      border-top: 1px solid #ebebeb; }
+  .wallet__wrap-1 {
+    flex: 1;
+    text-indent: 1em; }
+    .wallet__wrap-1:nth-child(2) {
+      text-align: center;
+      text-indent: 0; }
+  .wallet__wrap-2 {
+    margin-top: .3rem;
+    display: block; }
+  .wallet__wrap-3 {
+    margin-top: .1rem;
+    display: block;
+    font-size: 0.26rem; }
+  .wallet__wrap-4 {
+    color: green;
+    line-height: 1.5rem;
+    font-size: 0.4rem; }

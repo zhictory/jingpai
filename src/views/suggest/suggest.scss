@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-08
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.suggest {
+  background: #f5f3f2;
+  min-height: 100vh;
+  &__tips {
+    color: #8c8c8c;
+    text-align: center;
+  }
+  &__oper {
+    text-align: center;
+    a {
+      display: inline-block;
+      margin: .4rem .2rem;
+      border: 1px solid #ff2d4a;
+      border-radius: 4px;
+      color: #ff2d4a;
+      text-align: center;
+      width: 2rem;
+      height: .8rem;
+      line-height: .8rem;
+    }
+  }
+  &__form {
+    &-item {
+      label {
+        display: block;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        width: 100%;
+        text-indent: 1em;
+      }
+      input {
+        width: 100%;
+        text-indent: 1em;
+        height: 0.8rem;
+        line-height: 0.8rem;
+      }
+      textarea {
+        box-sizing: border-box;
+        padding: .2rem .3rem;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+      }
+    }
+    input[type=submit] {
+      -webkit-appearance: none;
+      display: block;
+      border-radius: 0;
+      margin: 1rem auto 2rem;
+      width: 60%;
+      height: .8rem;
+      line-height: .8rem;
+      background: #ff2d4a;
+      color: #fff;
+      text-align: center;        
+    }
+  }
+}

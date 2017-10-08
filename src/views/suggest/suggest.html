@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "投诉建议 | 竞拍", "cssname": "suggest" })
+</head>
+
+<body>
+  <section class="suggest mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "投诉建议" })
+    <form class="suggest__form" action="">
+      <div class="suggest__form-item">
+        <label for="">联系电话</label>
+        <input type="tel" placeholder="请输入您的电话，便于我们联系您">
+      </div>
+      <div class="suggest__form-item">
+        <label for="">问题和建议</label>
+        <textarea rows="4" placeholder="请输入您的意见和建议，我们将不断改进"></textarea>
+      </div>
+      <input type="submit" value="提交建议">
+    </form>
+    <p class="suggest__tips">工作日9:30-21:00</p>
+    <div class="suggest__oper">
+      <a href="">在线客服</a>
+      <a href="">客服热线</a>
+    </div>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "suggest"})
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>绑定手机 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/bind.css">
+
+</head>
+
+<body>
+  <section class="bind mid-wrap">
+    
+
+  <header class="sub-header">
+    <a class="goback" onclick="history.back()">←</a>
+    <div class="sub-header__title"> 绑定手机号 </div>
+  </header>
+
+    <p class="bind__tips">绑定手机号码可以最大程度保证您的账户安全</p>
+    <form class="bind__form" action="">
+      <div class="bind__form-item">
+        <label for="">手机号</label>
+        <input type="tel" placeholder="请输入您的手机号">
+      </div>
+      <div class="bind__form-item">
+        <label for="">验证码</label>
+        <input class="input-1" type="number" placeholder="请输入验证码">
+        <span class="bind__code">获取验证码</span>
+      </div>
+      <input type="submit" value="绑定手机">
+    </form>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/bind.js"></script>
+</body>
+
+</html>

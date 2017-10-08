@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "收货地址 | 竞拍", "cssname": "address" })
+</head>
+
+<body>
+  <section class="address mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "收货地址" })
+    <form class="address__form" action="">
+      <div class="address__form-item">
+        <label for="">收件人</label>
+        <input type="text" placeholder="请填写收件人姓名">
+      </div>
+      <div class="address__form-item">
+        <label for="">手机号</label>
+        <input type="tel" placeholder="请填写收件人手机号">
+      </div>
+      <div class="address__form-item">
+        <label for="">QQ</label>
+        <input type="text" placeholder="请填写QQ号，用于Q币发货">
+      </div>
+      <div class="address__form-item">
+        <label for="">支付宝账号</label>
+        <input type="text" placeholder="实名验证过的账号才能获取奖励">
+      </div>
+      <div class="address__form-item">
+        <label for="">支付宝姓名</label>
+        <input type="text" placeholder="请填写支付宝实名认证姓名">
+      </div>
+      <div class="address__form-item">
+        <label for="">选择地区</label>
+        <input type="text" placeholder="">
+      </div>
+      <div class="address__form-item">
+        <label for="">具体地址</label>
+        <textarea name="" id="" rows="4" placeholder="请填写具体地址"></textarea>
+      </div>
+      <div class="address__form-item">
+        <label for="">备注</label>
+        <textarea name="" id="" rows="4" placeholder="请填写备注"></textarea>
+      </div>
+    </form>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "address"})
+</body>
+
+</html>

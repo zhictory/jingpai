@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "差价购买订单 | 竞拍", "cssname": "order" })
+</head>
+
+<body>
+  <section class="order mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "差价购买订单" })
+    <nav class="order__nav">
+      <div class="order__nav-item order__nav-item--on"><a href="">全部</a></div>
+      <div class="order__nav-item"><a href="">待付款</a></div>
+      <div class="order__nav-item"><a href="">待签收</a></div>
+      <div class="order__nav-item"><a href="">待晒单</a></div>
+    </nav>
+    <div class="none">
+      暂无数据
+      <div class="link"><a href="./list.html">去逛逛</a></div>
+    </div>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "order"})
+</body>
+
+</html>

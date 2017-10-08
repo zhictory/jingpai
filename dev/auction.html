@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>我的竞拍 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/auction.css">
+
+</head>
+
+<body>
+  <section class="auction mid-wrap">
+    
+
+  <header class="sub-header">
+    <a class="goback" onclick="history.back()">←</a>
+    <div class="sub-header__title"> 我的竞拍 </div>
+  </header>
+
+    <nav class="auction__nav">
+      <div class="auction__nav-item auction__nav-item--on"><a href="">全部</a></div>
+      <div class="auction__nav-item"><a href="">我在拍</a></div>
+      <div class="auction__nav-item"><a href="">我拍中</a></div>
+      <div class="auction__nav-item"><a href="">差价购</a></div>
+      <div class="auction__nav-item"><a href="">待付款</a></div>
+    </nav>
+    <ul class="auction__list">
+      <li class="auction__item">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成效价：￥90.00</p>
+            <p>成交人：我是谁</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <span>已返0购物币</span>
+          <a href="">差价购买</a>
+        </div>
+      </li>
+      <li class="auction__item">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成效价：￥90.00</p>
+            <p>成交人：我是谁</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <span>已返0购物币</span>
+          <a href="">差价购买</a>
+        </div>
+      </li>
+      <li class="auction__item">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成效价：￥90.00</p>
+            <p>成交人：我是谁</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <span>已返0购物币</span>
+          <a href="">差价购买</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/auction.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-08
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.order {
+  background: #f5f3f2;
+  &__nav {
+    display: flex;
+    height: 1rem;
+    line-height: 1rem;
+    &-item {
+      flex: 1;
+      text-align: center;
+      a {
+        color: #000;
+      }
+      &--on {
+        color: #ff2d4a;
+        a {
+          color: #ff2d4a;
+        }
+      }
+    }
+  }
+  .none {
+    margin: 2rem 0 0;
+    text-align: center;
+    height: 100vh;
+  }
+  .link {
+    border: 1px solid #ff2d4a;
+    margin: 2rem auto;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    a {
+      color: #ff2d4a;
+    }
+  }
+}

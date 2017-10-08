@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>个人信息 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/userinfo.css">
+
+</head>
+
+<body>
+  <section class="userinfo mid-wrap">
+    
+
+  <header class="sub-header">
+    <a class="goback" onclick="history.back()">←</a>
+    <div class="sub-header__title"> 个人信息 </div>
+  </header>
+
+    <ul class="userinfo__list">
+      <li class="userinfo__item userinfo__item-1">
+        <a class="userinfo__tt" href="">头像<span class="userinfo__ct"><img src="http://is2.mzstatic.com/image/thumb/Purple18/v4/f8/8f/ba/f88fbafc-e2ba-772d-df02-e56b07b94503/source/512x512bb.jpg" alt=""></span></a>
+      </li>
+      <li class="userinfo__item">
+        <a class="userinfo__tt" href="">昵称<span class="userinfo__ct">老哥</span></a>
+      </li>
+      <li class="userinfo__item">
+        <a class="userinfo__tt" href="">手机号</a>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/userinfo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-08
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.wallet {
+  background: #f5f3f2;
+  min-height: 100vh;
+  &__info {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    background: #fff;
+    .list {
+      display: flex;
+    }
+    .item {
+      flex: 1;
+      margin: .3rem 0 .2rem;
+      text-align: center;
+      line-height: 0.4rem;
+    }
+  }
+  &__detail {
+    margin-top: .2rem;
+    background: #fff;
+  }
+  &__nav {
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    height: .8rem;
+    line-height: .8rem;
+    a {
+      display: inline-block;
+      width: 100%;
+      color: #000;        
+    }
+    &-item {
+      flex: 1;
+      text-align: center;
+      &--on {
+        color: #ff2d4a;
+        a {
+          color: #ff2d4a;        
+        }
+      }
+    }
+  }
+  &__list {
+
+  }
+  &__item {
+    display: flex;
+    height: 1.5rem;
+    border: 1px solid #ebebeb;
+    border-top: none;
+    &:first-child {
+      border-top: 1px solid #ebebeb;
+    }
+  }
+  &__wrap-1 {
+    flex: 1;
+    text-indent: 1em;
+    &:nth-child(2) {
+      text-align: center;
+      text-indent: 0;
+    }
+  }
+  &__wrap-2 {
+    margin-top: .3rem;
+    display: block;
+  }
+  &__wrap-3 {
+    margin-top: .1rem;
+    display: block;
+    font-size: 0.26rem;
+  }
+  &__wrap-4 {
+    color: green;
+    line-height: 1.5rem;
+    font-size: 0.4rem;
+  }
+}

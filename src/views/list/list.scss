@@ -9,9 +9,13 @@
 @import '../../widgets/header';
 
 .list {
-  display: flex;
+  padding-bottom: 2rem;
   height: 100%;
   background: #f5f3f2;
+  &__wrap {
+    display: flex;
+    height: 100%;
+  }
   &__left {
     float: left;
     width: 2rem;
@@ -19,9 +23,6 @@
     overflow: auto;
   }
   &__cate {
-    &-list {
-
-    }
     &-item {
       border-bottom: 1px solid #e7e7e7;
       text-align: center;

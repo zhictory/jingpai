@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  @@include("head.html", { "title": "个人信息 | 竞拍", "cssname": "userinfo" })
+</head>
+
+<body>
+  <section class="userinfo mid-wrap">
+    @@include("header.html", { "headType" : 2, "nav" : "个人信息" })
+    <ul class="userinfo__list">
+      <li class="userinfo__item userinfo__item-1">
+        <a class="userinfo__tt" href="">头像<span class="userinfo__ct"><img src="http://is2.mzstatic.com/image/thumb/Purple18/v4/f8/8f/ba/f88fbafc-e2ba-772d-df02-e56b07b94503/source/512x512bb.jpg" alt=""></span></a>
+      </li>
+      <li class="userinfo__item">
+        <a class="userinfo__tt" href="">昵称<span class="userinfo__ct">老哥</span></a>
+      </li>
+      <li class="userinfo__item">
+        <a class="userinfo__tt" href="">手机号</a>
+      </li>
+    </ul>
+  </section>
+  <!-- script -->
+  @@include("script.html", { "jsname": "userinfo"})
+</body>
+
+</html>

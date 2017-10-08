@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/*-----------------
+ * zhangzhensheng
+ * 2017-10-08
+ *-----------------*/
+/* 主体居中 */
+.mid-wrap {
+  margin: 0 auto;
+  width: 7.5rem; }
+
+/* 主要样式 */
+body {
+  font-size: 0.3rem; }
+
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    line-height: 0; }
+  .clearfix:after {
+    clear: both; }
+
+/* 加载更多 */
+.more-load {
+  position: relative;
+  top: -1px;
+  border-top: 1px solid #ebebeb;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #000;
+  font-size: 0.24rem; }
+
+.hidden {
+  display: none; }
+
+.main-nav {
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  background: #f5f3f2; }
+  .main-nav__item {
+    flex: 1;
+    text-align: center;
+    height: .9rem;
+    line-height: .9rem;
+    color: #000; }
+    .main-nav__item--on {
+      color: red; }
+
+.main-header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  background: #ff2d4a;
+  font-size: 0.36rem; }
+  .main-header__title {
+    color: #fff; }
+  .main-header__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.9rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+.sub-header {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  text-align: center;
+  height: .8rem;
+  line-height: .8rem;
+  background: #fff;
+  font-size: 0.32rem; }
+  .sub-header__title {
+    color: #000; }
+  .sub-header__home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.9rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+.goback {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1rem;
+  line-height: .8rem;
+  color: #000;
+  font-size: .6rem;
+  text-align: center; }
+
+.auction {
+  background: #f5f3f2; }
+  .auction__nav {
+    display: flex;
+    height: 1rem;
+    line-height: 1rem; }
+    .auction__nav-item {
+      flex: 1;
+      text-align: center; }
+      .auction__nav-item a {
+        color: #000; }
+      .auction__nav-item--on {
+        color: #ff2d4a; }
+        .auction__nav-item--on a {
+          color: #ff2d4a; }
+  .auction__item {
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+    padding: .2rem .3rem 0;
+    background: #fff; }
+  .auction__list .goods-wrap {
+    display: flex; }
+  .auction__list .img-wrap {
+    width: 1.6rem;
+    height: 1.6rem; }
+    .auction__list .img-wrap img {
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom; }
+  .auction__list .info-wrap {
+    flex: 1;
+    margin-left: .1rem;
+    line-height: 0.5rem; }
+    .auction__list .info-wrap .time {
+      float: right; }
+  .auction__list .oper-wrap {
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden; }
+    .auction__list .oper-wrap a {
+      float: right;
+      margin: .2rem .4rem;
+      border: 1px solid #ff2d4a;
+      width: 2rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      text-align: center;
+      color: #ff2d4a; }

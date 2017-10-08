@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>客服中心 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/message-item.css">
+
+</head>
+
+<body>
+  <section class="message-item mid-wrap">
+    
+
+  <header class="sub-header">
+    <a class="goback" onclick="history.back()">←</a>
+    <div class="sub-header__title"> 消息详情 </div>
+  </header>
+
+    <h1 class="message-item__tt">消费提醒</h1>
+    <p class="message-item__time">2017-10-8 16:49</p>
+    <p class="message-item__ct">您在竞拍“Apple iPad Pro 128G WIFI版12.9寸 无鼠标键盘 颜色随机”时已消耗5赠币，进入账号余额可查看明细</p>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/message-item.js"></script>
+</body>
+
+</html>

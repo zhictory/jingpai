@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 引入头部资源 -->
+<meta charset="UTF-8">
+<title>收货地址 | 竞拍</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<!-- 是否启用 WebApp 全屏模式 -->
+<meta name="format-detection" content="telephone=no, email=no" />
+<!-- 不自动识别手机号码和email -->
+<meta name="HandheldFriendly" content="true">
+<!-- 兼容老式浏览器,如黑莓等 -->
+<meta name="screen-orientation" content="portrait">
+<!-- uc强制竖屏 -->
+<meta name="full-screen" content="yes">
+<!-- uc强制全屏 -->
+<meta name="browsermode" content="application">
+<!-- uc应用模式 -->
+<meta name="x5-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- QQ强制全屏 -->
+<meta name="x5-page-mode" content="app">
+<!-- QQ应用模式 -->
+
+<script>
+  ; (function () {
+    var clientWidth = document.documentElement.clientWidth;
+    if (clientWidth > 750) { clientWidth = 750 }
+    document.getElementsByTagName("html")[0].style.fontSize = clientWidth / 7.5 + "px";
+  })();
+</script>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/address.css">
+
+</head>
+
+<body>
+  <section class="address mid-wrap">
+    
+
+  <header class="sub-header">
+    <a class="goback" onclick="history.back()">←</a>
+    <div class="sub-header__title"> 收货地址 </div>
+  </header>
+
+    <form class="address__form" action="">
+      <div class="address__form-item">
+        <label for="">收件人</label>
+        <input type="text" placeholder="请填写收件人姓名">
+      </div>
+      <div class="address__form-item">
+        <label for="">手机号</label>
+        <input type="tel" placeholder="请填写收件人手机号">
+      </div>
+      <div class="address__form-item">
+        <label for="">QQ</label>
+        <input type="text" placeholder="请填写QQ号，用于Q币发货">
+      </div>
+      <div class="address__form-item">
+        <label for="">支付宝账号</label>
+        <input type="text" placeholder="实名验证过的账号才能获取奖励">
+      </div>
+      <div class="address__form-item">
+        <label for="">支付宝姓名</label>
+        <input type="text" placeholder="请填写支付宝实名认证姓名">
+      </div>
+      <div class="address__form-item">
+        <label for="">选择地区</label>
+        <input type="text" placeholder="">
+      </div>
+      <div class="address__form-item">
+        <label for="">具体地址</label>
+        <textarea name="" id="" rows="4" placeholder="请填写具体地址"></textarea>
+      </div>
+      <div class="address__form-item">
+        <label for="">备注</label>
+        <textarea name="" id="" rows="4" placeholder="请填写备注"></textarea>
+      </div>
+    </form>
+  </section>
+  <!-- script -->
+  <script src="./libs/jquery-3.2.1.min.js"></script>
+<script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./js/address.js"></script>
+</body>
+
+</html>
