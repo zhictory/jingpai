@@ -36,6 +36,14 @@ body {
 .hidden {
   display: none; }
 
+/* iconfont */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 .main-nav {
   position: fixed;
   z-index: 900;
@@ -49,10 +57,16 @@ body {
     flex: 1;
     text-align: center;
     height: .9rem;
-    line-height: .9rem;
-    color: #000; }
+    color: #000;
+    font-size: 0.24rem; }
     .main-nav__item--on {
       color: red; }
+  .main-nav svg {
+    display: block;
+    margin: .1rem auto;
+    border: none;
+    width: .3rem;
+    height: .3rem; }
 
 .main-header {
   position: relative;
@@ -91,6 +105,16 @@ body {
     color: #fff;
     font-size: 0.24rem; }
 
+.goback {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1rem;
+  line-height: .8rem;
+  color: #000;
+  font-size: .6rem;
+  text-align: center; }
+
 .member {
   background: #f5f3f2;
   padding-bottom: 1.1rem; }
@@ -99,6 +123,14 @@ body {
     z-index: 100;
     width: 100%;
     height: 100%; }
+    .member__link svg {
+      position: absolute;
+      left: 0.4rem;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0.3rem;
+      height: 0.3rem; }
   .member__tips {
     position: relative;
     top: -1px;
@@ -190,14 +222,14 @@ body {
       margin: .3rem 0;
       flex: 1;
       text-align: center; }
-    .member__auction img {
+    .member__auction svg {
       display: inline-block;
-      border-radius: 50%;
-      margin-bottom: .2rem;
       width: 0.6rem;
       height: 0.6rem;
-      background: pink;
       vertical-align: bottom; }
+    .member__auction .member__link svg {
+      width: 0.3rem;
+      height: 0.3rem; }
     .member__auction span {
       display: inline-block;
       width: 100%; }

@@ -1,6 +1,26 @@
 <nav class="main-nav">
-  <a href="./index.html" class="main-nav__item @@if (nav === 1) {main-nav__item--on}">首页</a>
-  <a href="./new.html" class="main-nav__item @@if (nav === 2) {main-nav__item--on}">最新成交</a>
-  <a href="./list.html" class="main-nav__item @@if (nav === 3) {main-nav__item--on}">分类</a>
-  <a href="./member.html" class="main-nav__item @@if (nav === 4) {main-nav__item--on}">我的</a>
+  <a href="./index.html" class="main-nav__item @@if (nav === 1) {main-nav__item--on}">
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-shouye"></use>
+    </svg>
+    首页
+  </a>
+  <a href="./new.html" class="main-nav__item @@if (nav === 2) {main-nav__item--on}">
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-chengjiao"></use>
+    </svg>
+    最新成交
+  </a>
+  <a href="./list.html" class="main-nav__item @@if (nav === 3) {main-nav__item--on}">
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-fenlei"></use>
+    </svg>
+    分类
+  </a>
+  <a href="./member.html" class="main-nav__item @@if (nav === 4) {main-nav__item--on}">
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-wode"></use>
+    </svg>
+    我的
+  </a>
 </nav>
