@@ -11,15 +11,60 @@
 .new {
   background: #f5f3f2;
   &__notify {
+    position: relative;
     padding: .1rem 0;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     background: #fff;
     font-size: 0.28rem;
-    text-indent: 2em;
+    text-indent: 3em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    .list {
+      position: relative;
+      height: 0.6rem;
+      animation: scroll 4s infinite linear;
+    }
+    .item {
+      height: 0.6rem;
+      line-height: 0.6rem;
+    }
+    @keyframes scroll
+    {
+      0% {
+        top: 0;
+      }
+      14% {
+        top: 0;
+      }
+      28% {
+        top: -.6rem;
+      }
+      42% {
+        top: -.6rem;
+      }
+      56% {
+        top: -1.2rem;
+      }
+      70% {
+        top: -1.2rem;
+      }
+      84% {
+        top: -1.8rem;
+      }
+      100% {
+        top: -1.8rem;
+      }
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1em;
+      color: red;
+      margin-right: .2rem;
+    }
   }
   &__list {
     padding: 0 .2rem;

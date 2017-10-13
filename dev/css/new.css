@@ -36,6 +36,14 @@ body {
 .hidden {
   display: none; }
 
+/* iconfont */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 .main-nav {
   position: fixed;
   z-index: 900;
@@ -49,10 +57,16 @@ body {
     flex: 1;
     text-align: center;
     height: .9rem;
-    line-height: .9rem;
-    color: #000; }
+    color: #000;
+    font-size: 0.24rem; }
     .main-nav__item--on {
       color: red; }
+  .main-nav svg {
+    display: block;
+    margin: .1rem auto;
+    border: none;
+    width: .3rem;
+    height: .3rem; }
 
 .main-header {
   position: relative;
@@ -104,15 +118,48 @@ body {
 .new {
   background: #f5f3f2; }
   .new__notify {
+    position: relative;
     padding: .1rem 0;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     background: #fff;
     font-size: 0.28rem;
-    text-indent: 2em;
+    text-indent: 3em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
+    .new__notify .list {
+      position: relative;
+      height: 0.6rem;
+      animation: scroll 4s infinite linear; }
+    .new__notify .item {
+      height: 0.6rem;
+      line-height: 0.6rem; }
+
+@keyframes scroll {
+  0% {
+    top: 0; }
+  14% {
+    top: 0; }
+  28% {
+    top: -.6rem; }
+  42% {
+    top: -.6rem; }
+  56% {
+    top: -1.2rem; }
+  70% {
+    top: -1.2rem; }
+  84% {
+    top: -1.8rem; }
+  100% {
+    top: -1.8rem; } }
+    .new__notify .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1em;
+      color: red;
+      margin-right: .2rem; }
   .new__list {
     padding: 0 .2rem;
     background: #fff; }

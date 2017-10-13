@@ -36,6 +36,14 @@ body {
 .hidden {
   display: none; }
 
+/* iconfont */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 .main-nav {
   position: fixed;
   z-index: 900;
@@ -49,10 +57,16 @@ body {
     flex: 1;
     text-align: center;
     height: .9rem;
-    line-height: .9rem;
-    color: #000; }
+    color: #000;
+    font-size: 0.24rem; }
     .main-nav__item--on {
       color: red; }
+  .main-nav svg {
+    display: block;
+    margin: .1rem auto;
+    border: none;
+    width: .3rem;
+    height: .3rem; }
 
 .main-header {
   position: relative;
@@ -143,13 +157,30 @@ body {
     margin-right: 1em;
     color: #ff2d4a; }
   .recharge__way-item {
+    position: relative;
     border-bottom: 1px solid #ebebeb;
     height: 0.8rem;
     line-height: 0.8rem;
     text-indent: 1em;
     background: #fff; }
-    .recharge__way-item::first-child {
+    .recharge__way-item:first-child {
       border-top: 1px solid #ebebeb; }
+    .recharge__way-item .icon {
+      margin-right: .2rem;
+      width: .6rem;
+      height: .6rem;
+      vertical-align: middle; }
+    .recharge__way-item .selected {
+      display: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: .2rem;
+      width: 1.5em;
+      height: 1.5em;
+      color: #ff2d4a; }
+    .recharge__way-item--on .selected {
+      display: block; }
   .recharge__protocol {
     height: 1rem;
     line-height: 1.2rem;

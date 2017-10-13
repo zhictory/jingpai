@@ -58,13 +58,35 @@
   }
   &__way {
     &-item {
+      position: relative;
       border-bottom: 1px solid #ebebeb;
       height: 0.8rem;
       line-height: 0.8rem;
       text-indent: 1em;
       background: #fff;
-      &::first-child {
+      &:first-child {
         border-top: 1px solid #ebebeb;
+      }
+      .icon {
+        margin-right: .2rem;
+        width: .6rem;
+        height: .6rem;
+        vertical-align: middle;
+      }
+      .selected {
+        display: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .2rem;
+        width: 1.5em;
+        height: 1.5em;
+        color: #ff2d4a;
+      }
+      &--on {
+        .selected {
+          display: block;
+        }
       }
     }
   }

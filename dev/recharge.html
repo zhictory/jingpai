@@ -46,37 +46,39 @@
     <div class="sub-header__title"> 充值中心 </div>
   </header>
 
-    <form class="recharge__form" action="">
+    <form class="recharge__form j_form" action="">
       <div class="recharge__form-item">
         <div class="recharge__tt">选择充值金额</div>
         <ul class="recharge__money">
-          <li class="recharge__money-item recharge__money-item--on">20</li>
-          <li class="recharge__money-item">50</li>
-          <li class="recharge__money-item">100</li>
-          <li class="recharge__money-item">300</li>
-          <li class="recharge__money-item">500</li>
-          <li class="recharge__money-item"><input type="text" placeholder="其他金额"></li>
+          <li class="recharge__money-item recharge__money-item--on" data-value="20">20</li>
+          <li class="recharge__money-item" data-value="50">50</li>
+          <li class="recharge__money-item" data-value="100">100</li>
+          <li class="recharge__money-item" data-value="300">300</li>
+          <li class="recharge__money-item" data-value="500">500</li>
+          <li class="recharge__money-item" data-value="0"><input name="money" type="number" placeholder="其他金额"></li>
         </ul>
-        <div class="recharge__result"><span>预计获得</span><span class="recharge__price">0拍币</span></div>
+        <div class="recharge__result"><span>预计获得</span><span class="recharge__price j_showMoney">20拍币</span></div>
+        <input class="j_money" type="hidden" value="20" />
       </div>
       <div class="recharge__form-item">
         <div class="recharge__tt">选择支付方式</div>
         <ul class="recharge__way">
-          <li class="recharge__way-item recharge__way-item--on"><i class="icon"></i><span>支付宝（2元以上）</span></li>
-          <li class="recharge__way-item"><i class="icon"></i><span>微信</span></li>
+          <li class="recharge__way-item recharge__way-item--on"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhifubao"></use></svg><span>支付宝（2元以上）</span><svg class="icon selected" aria-hidden="true"><use xlink:href="#icon-iconfonticonfonticonfont27"></use></svg></li>
+          <li class="recharge__way-item"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weixin1"></use></svg><span>微信</span><svg class="icon selected" aria-hidden="true"><use xlink:href="#icon-iconfonticonfonticonfont27"></use></svg></li>
         </ul>
       </div>
       <div class="recharge__form-item">
-        <div class="recharge__protocol"><input class="recharge__check" type="checkbox">我已同意<a href="">《用户协议》</a></div>
+        <div class="recharge__protocol"><input name="protocol" class="recharge__check" type="checkbox">我已同意<a href="">《用户协议》</a></div>
       </div>
       <div class="recharge__form-item">
-        <a class="recharge__submit" href="">确认充值</a>
+        <a class="recharge__submit j_submit">确认充值</a>
       </div>
     </form>
   </section>
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/iconfont.js"></script>
 <script src="./js/recharge.js"></script>
 </body>
 
