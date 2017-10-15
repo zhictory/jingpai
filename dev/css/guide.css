@@ -104,6 +104,10 @@ body {
     width: 0.9rem;
     color: #fff;
     font-size: 0.24rem; }
+  .sub-header .icon {
+    width: 0.6em;
+    height: 0.6em;
+    vertical-align: middle; }
 
 .goback {
   position: absolute;
@@ -114,11 +118,6 @@ body {
   color: #000;
   font-size: .6rem;
   text-align: center; }
-
-.icon {
-  width: 0.6em;
-  height: 0.6em;
-  vertical-align: middle; }
 
 .guide img {
   width: 100%;

@@ -38,6 +38,11 @@
     color: #fff;
     font-size: 0.24rem;
   }
+  .icon {
+    width: 0.6em;
+    height: 0.6em;
+    vertical-align: middle;
+  }
 }
 .goback {
   position: absolute;
@@ -48,9 +53,4 @@
   color: #000;
   font-size: .6rem;
   text-align: center;
-}
-.icon {
-  width: 0.6em;
-  height: 0.6em;
-  vertical-align: middle;
 }
