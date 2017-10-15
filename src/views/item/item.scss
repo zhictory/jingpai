@@ -64,16 +64,25 @@
     text-indent: 1em;
   }
   &__notify {
+    position: relative;
     padding: .1rem 0;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
     height: .8rem;
     line-height: 0.8rem;
     font-size: 0.28rem;
-    text-indent: 2em;
+    text-indent: 3em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1em;
+      color: red;
+      margin-right: .2rem;
+    }
   }
   &__record {
     background: #ffffff;
@@ -82,7 +91,10 @@
       border-bottom: 1px solid #ebebeb;
       height: 0.8rem;
       line-height: 0.8rem;
-      text-indent: 2em;
+      text-indent: 1em;
+      .icon {
+        margin-right: .2rem;
+      }
       span {
         float: right;
         margin-right: .8rem;
@@ -107,9 +119,14 @@
       display: flex;
       height: 0.75rem;
       line-height: 0.75rem;
+      overflow: hidden;
       span {
         flex: 1;
         text-align: center;
+      }
+      .span-1 {
+        flex: none;
+        width: 2rem;
       }
       &--on {
         color: #ff2d4a;
@@ -124,7 +141,7 @@
       border-bottom: 1px solid #ebebeb;
       height: 0.8rem;
       line-height: 0.8rem;
-      text-indent: 2em;
+      text-indent: 1em;
       &:after {
         content: '>';
         position: absolute;
@@ -150,6 +167,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: .15rem;
+    padding: .2rem 0;
     background: #fff;
     &-item {
       width: 50%;
@@ -165,8 +183,11 @@
     margin-top: .15rem;
     height: 1.4rem;
     background: #fff;
-    text-indent: 2em;
-    line-height: 1.4rem;
+    text-align: center;
+    img {
+      height: 100%;
+      vertical-align: middle;
+    }
   }
   &__other {
     margin-top: .15rem;
@@ -359,6 +380,18 @@
       width: 0.9rem;
       color: #000;
       font-size: 0.2rem;
+      text-align: center;
+      line-height: 0.32rem;
+      span {
+        display: inline-block;
+        width: 100%;
+      }
+      .icon {
+        margin-top: .2rem;
+        color: #8c8c8c;
+        width: 0.4rem;
+        height: 0.4rem;
+      }
     }
     .btn {
       width: 1.5rem;
