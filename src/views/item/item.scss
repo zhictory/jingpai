@@ -29,6 +29,10 @@
     background: #ff2d4a;
     font-size: 0.6rem;
     color: #fff;
+    .price-3 {
+      background: rgba(0,0,0,.2);
+      text-decoration: line-through;
+    }
     .price-1 {
       flex: 1;
       margin: 0 .4rem;
