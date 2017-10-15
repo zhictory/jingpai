@@ -9,6 +9,7 @@
 @import '../../widgets/header';
 
 .address {
+  position: relative;
   &__form-item {
     border-bottom: 1px solid #ebebeb;
     display: flex;
@@ -29,6 +30,24 @@
       padding: .1rem;
       width: 100%;
       background: #f5f3f2;
+    }
+  }
+  .submit-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0 .2rem;
+    text-align: center;
+    min-height: .8rem;
+    line-height: .8rem;
+    border: none;
+    background: transparent;
+    input {
+      line-height: .8rem;
+      -webkit-appearance: none;
+      border: none;
+      background: transparent;
     }
   }
 }

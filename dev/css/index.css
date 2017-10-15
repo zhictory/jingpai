@@ -115,6 +115,11 @@ body {
   font-size: .6rem;
   text-align: center; }
 
+.icon {
+  width: 0.6em;
+  height: 0.6em;
+  vertical-align: middle; }
+
 .index {
   background-color: #f5f3f2;
   padding-bottom: 1.1rem; }
@@ -243,7 +248,12 @@ body {
       .index__auction-item .time {
         margin-top: .1rem; }
       .index__auction-item .price {
-        font-size: 0.24rem; }
+        font-size: 0.24rem;
+        width: auto; }
+        .index__auction-item .price.red-bg {
+          background: #ff2d4a; }
+        .index__auction-item .price.change-bg {
+          transition: background .2s linear; }
       .index__auction-item .name {
         color: #000; }
       .index__auction-item .btn {

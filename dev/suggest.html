@@ -42,20 +42,20 @@
     
 
   <header class="sub-header">
-    <a class="goback" onclick="history.back()">←</a>
+    <a class="goback" onclick="history.back()"><svg class="icon" aria-hidden="true"> <use xlink:href="#icon-fanhui"></use> </svg></a>
     <div class="sub-header__title"> 投诉建议 </div>
   </header>
 
-    <form class="suggest__form" action="">
+    <form class="suggest__form j_suggestForm" action="">
       <div class="suggest__form-item">
         <label for="">联系电话</label>
-        <input type="tel" placeholder="请输入您的电话，便于我们联系您">
+        <input type="tel" name="phone" maxlength="11" placeholder="请输入您的电话，便于我们联系您">
       </div>
       <div class="suggest__form-item">
         <label for="">问题和建议</label>
-        <textarea rows="4" placeholder="请输入您的意见和建议，我们将不断改进"></textarea>
+        <textarea rows="4" name="content" placeholder="请输入您的意见和建议，我们将不断改进"></textarea>
       </div>
-      <input type="submit" value="提交建议">
+      <input type="submit" name="submitbtn" value="提交建议">
     </form>
     <p class="suggest__tips">工作日9:30-21:00</p>
     <div class="suggest__oper">
@@ -66,7 +66,22 @@
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/fastclick.js"></script>
+<script src="./libs/iconfont.js"></script>
 <script src="./js/suggest.js"></script>
+<script>
+  !(function () {
+  try {
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  } catch (e) {
+    console.log(e.name, e.message);
+  }
+}());
+</script>
 </body>
 
 </html>

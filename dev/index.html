@@ -115,22 +115,22 @@
       <ul class="index__auction-list">
         <li class="index__auction-item index__auction-item--on">
           <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
-          <span class="time">14:51:11</span>
-          <span class="price">&yen;1212.00</span>
+          <span class="time j_time">14:51:11</span>
+          <span class="price j_price">&yen;1212.00</span>
           <span class="name">我的用户名</span>
           <a href="./item.html" class="btn">参与竞拍</a>
         </li>
         <li class="index__auction-item">
           <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
-          <span class="time">14:51:11</span>
-          <span class="price">&yen;1212.00</span>
+          <span class="time j_time">14:51:11</span>
+          <span class="price j_price">&yen;1212.00</span>
           <span class="name">我的用户名</span>
           <span class="btn">竞拍结束</span>
         </li>
         <li class="index__auction-item">
           <img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt="">
-          <span class="time">14:51:11</span>
-          <span class="price">&yen;1212.00</span>
+          <span class="time j_time">14:51:11</span>
+          <span class="price j_price">&yen;1212.00</span>
           <span class="name">我的用户名</span>
           <span class="btn">竞拍结束</span>
         </li>
@@ -167,7 +167,21 @@
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/fastclick.js"></script>
 <script src="./libs/iconfont.js"></script>
 <script src="./js/index.js"></script>
+<script>
+  !(function () {
+  try {
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  } catch (e) {
+    console.log(e.name, e.message);
+  }
+}());
+</script>
 </body>
 </html>

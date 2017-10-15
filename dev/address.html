@@ -42,7 +42,7 @@
     
 
   <header class="sub-header">
-    <a class="goback" onclick="history.back()">←</a>
+    <a class="goback" onclick="history.back()"><svg class="icon" aria-hidden="true"> <use xlink:href="#icon-fanhui"></use> </svg></a>
     <div class="sub-header__title"> 收货地址 </div>
   </header>
 
@@ -57,7 +57,7 @@
       </div>
       <div class="address__form-item">
         <label for="">QQ</label>
-        <input type="text" placeholder="请填写QQ号，用于Q币发货">
+        <input type="tel" placeholder="请填写QQ号，用于Q币发货">
       </div>
       <div class="address__form-item">
         <label for="">支付宝账号</label>
@@ -79,12 +79,30 @@
         <label for="">备注</label>
         <textarea name="" id="" rows="4" placeholder="请填写备注"></textarea>
       </div>
+      <div class="address__form-item submit-item">
+        <input type="submit" class="" value="保存">
+      </div>
     </form>
   </section>
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/fastclick.js"></script>
+<script src="./libs/iconfont.js"></script>
 <script src="./js/address.js"></script>
+<script>
+  !(function () {
+  try {
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  } catch (e) {
+    console.log(e.name, e.message);
+  }
+}());
+</script>
 </body>
 
 </html>

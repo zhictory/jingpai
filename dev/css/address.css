@@ -36,6 +36,14 @@ body {
 .hidden {
   display: none; }
 
+/* iconfont */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
 .main-nav {
   position: fixed;
   z-index: 900;
@@ -49,10 +57,16 @@ body {
     flex: 1;
     text-align: center;
     height: .9rem;
-    line-height: .9rem;
-    color: #000; }
+    color: #000;
+    font-size: 0.24rem; }
     .main-nav__item--on {
       color: red; }
+  .main-nav svg {
+    display: block;
+    margin: .1rem auto;
+    border: none;
+    width: .3rem;
+    height: .3rem; }
 
 .main-header {
   position: relative;
@@ -101,21 +115,44 @@ body {
   font-size: .6rem;
   text-align: center; }
 
-.address__form-item {
-  border-bottom: 1px solid #ebebeb;
-  display: flex;
-  min-height: 1rem;
-  line-height: 1rem; }
-  .address__form-item label {
-    min-width: 2rem;
-    text-indent: 1em; }
-  .address__form-item input {
-    flex: 1;
-    margin-left: .2rem; }
-  .address__form-item textarea {
+.icon {
+  width: 0.6em;
+  height: 0.6em;
+  vertical-align: middle; }
+
+.address {
+  position: relative; }
+  .address__form-item {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    min-height: 1rem;
+    line-height: 1rem; }
+    .address__form-item label {
+      min-width: 2rem;
+      text-indent: 1em; }
+    .address__form-item input {
+      flex: 1;
+      margin-left: .2rem; }
+    .address__form-item textarea {
+      border: none;
+      border-radius: 0;
+      margin: .2rem .2rem .2rem 0;
+      padding: .1rem;
+      width: 100%;
+      background: #f5f3f2; }
+  .address .submit-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0 .2rem;
+    text-align: center;
+    min-height: .8rem;
+    line-height: .8rem;
     border: none;
-    border-radius: 0;
-    margin: .2rem .2rem .2rem 0;
-    padding: .1rem;
-    width: 100%;
-    background: #f5f3f2; }
+    background: transparent; }
+    .address .submit-item input {
+      line-height: .8rem;
+      -webkit-appearance: none;
+      border: none;
+      background: transparent; }

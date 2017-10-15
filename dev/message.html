@@ -42,7 +42,7 @@
     
 
   <header class="sub-header">
-    <a class="goback" onclick="history.back()">←</a>
+    <a class="goback" onclick="history.back()"><svg class="icon" aria-hidden="true"> <use xlink:href="#icon-fanhui"></use> </svg></a>
     <div class="sub-header__title"> <nav class='message__nav'><div class='message__nav-item message__nav-item--on j_nav1'>消息</div><div class='message__nav-item j_nav2'>公告</div></nav> </div>
   </header>
 
@@ -64,7 +64,22 @@
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/fastclick.js"></script>
+<script src="./libs/iconfont.js"></script>
 <script src="./js/message.js"></script>
+<script>
+  !(function () {
+  try {
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  } catch (e) {
+    console.log(e.name, e.message);
+  }
+}());
+</script>
 </body>
 
 </html>

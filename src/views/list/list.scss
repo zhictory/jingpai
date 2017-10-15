@@ -85,6 +85,14 @@
         color: #fff;
         text-align: center;
       }
+      .price {
+        &.red-bg {
+          background: #ff2d4a;
+        }
+        &.change-bg {
+          transition: background .2s linear;
+        }
+      }
     }
   }
 }

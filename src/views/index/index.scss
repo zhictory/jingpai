@@ -169,6 +169,13 @@
       }
       .price {
         font-size: 0.24rem;
+        width: auto;
+        &.red-bg {
+          background: #ff2d4a;
+        }
+        &.change-bg {
+          transition: background .2s linear;
+        }
       }
       .name {
         color: #000;
