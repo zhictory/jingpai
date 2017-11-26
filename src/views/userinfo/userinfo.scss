@@ -57,4 +57,47 @@
       }
     }
   }
+  &__name,
+  &__phone,
+  &__code {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: .15rem 0;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    text-indent: .2rem;
+  }
+  &__code {
+    width: 50%;
+  }
+  &__send {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 0 .2rem .2rem;
+    padding: 0 .2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    height: 100%;
+    line-height: .8rem;
+    text-align: center;
+    -webkit-appearance: none;
+    background: #f5f3f2;
+  }
+  &__photo {
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  &__form-item {
+    margin-bottom: .2rem;
+    height: 0.8rem;
+  }
 }

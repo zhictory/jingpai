@@ -192,7 +192,6 @@ body {
     .recharge__protocol a {
       color: #ff2d4a; }
     .recharge__protocol input[type=checkbox] {
-      -webkit-appearance: none;
       margin-right: .1rem;
       vertical-align: middle; }
   .recharge__submit {

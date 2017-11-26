@@ -1,7 +1,17 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var htmlreplace = require('gulp-html-replace');
-var fileinclude = require('gulp-file-include');
+const path = require('path');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const htmlreplace = require('gulp-html-replace');
+const fileinclude = require('gulp-file-include');
+const browserSync = require('browser-sync');
+const destHtml = path.join(__dirname, './dev/*.html');
+
+// 浏览器同步刷新
+browserSync({
+  browser: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+  server: path.dirname(destHtml),
+  notify: false
+});
 
 gulp.watch('./src/views/**/*.scss', function (event) {
   return gulp.src(event.path)
