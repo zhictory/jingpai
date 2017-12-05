@@ -13,5 +13,5 @@ listObj.eq(type).removeClass('hidden');
 
 $('.goback').on('click', (e)=>{
     e.preventDefault();
-    location.href = '/member.html';
+    location.href = '/jingpai/dev/member.html';
 });

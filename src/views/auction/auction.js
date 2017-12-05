@@ -11,5 +11,5 @@ typeObj.eq(type).addClass('auction__nav-item--on');
 
 $('.goback').on('click', (e)=>{
     e.preventDefault();
-    location.href = '/member.html';
+    location.href = '/jingpai/dev/member.html';
 });

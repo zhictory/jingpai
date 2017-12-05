@@ -29,5 +29,5 @@ switch (type) {
 
 $('.goback').on('click', (e)=>{
     e.preventDefault();
-    location.href = '/member.html';
+    location.href = '/jingpai/dev/member.html';
 });
