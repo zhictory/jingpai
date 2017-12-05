@@ -147,3 +147,36 @@ body {
     text-align: center; }
     .order .link a {
       color: #ff2d4a; }
+  .order__item {
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+    padding: .2rem .3rem 0;
+    background: #fff; }
+  .order__list .goods-wrap {
+    display: flex; }
+  .order__list .img-wrap {
+    width: 1.6rem;
+    height: 1.6rem; }
+    .order__list .img-wrap img {
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom; }
+  .order__list .info-wrap {
+    flex: 1;
+    margin-left: .1rem;
+    line-height: 0.5rem; }
+    .order__list .info-wrap .time {
+      float: right; }
+  .order__list .oper-wrap {
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden; }
+    .order__list .oper-wrap a {
+      float: right;
+      margin: .2rem .4rem;
+      border: 1px solid #ff2d4a;
+      width: 2rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      text-align: center;
+      color: #ff2d4a; }

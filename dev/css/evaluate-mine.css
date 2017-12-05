@@ -134,3 +134,50 @@ body {
     text-align: center; }
     .evaluate-mine .link a {
       color: #ff2d4a; }
+
+.evaluate {
+  background: #fff; }
+  .evaluate__list {
+    background: #fff; }
+  .evaluate__link {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .evaluate__item {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #ebebeb; }
+    .evaluate__item-left {
+      width: 1rem;
+      text-align: center; }
+      .evaluate__item-left img {
+        margin-top: .3rem;
+        display: inline-block;
+        width: 0.6rem;
+        height: 0.6rem;
+        vertical-align: bottom;
+        border-radius: 50%;
+        background: pink; }
+    .evaluate__item-right {
+      flex: 1; }
+    .evaluate__item-name {
+      line-height: .3rem;
+      margin: .4rem 0 .2rem;
+      font-size: 0.3rem; }
+      .evaluate__item-name .time {
+        float: right;
+        margin-right: 2em;
+        font-size: 0.2rem; }
+    .evaluate__item-ct {
+      margin-bottom: .2rem;
+      display: flex;
+      color: #333; }
+    .evaluate__item-pic {
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem; }
+      .evaluate__item-pic img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        vertical-align: bottom; }

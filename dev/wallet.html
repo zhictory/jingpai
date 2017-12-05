@@ -55,13 +55,19 @@
     </div>
     <div class="wallet__detail">
       <nav class="wallet__nav">
-        <div class="wallet__nav-item wallet__nav-item--on"><a href="">支出明细</a></div>
-        <div class="wallet__nav-item"><a href="">收益明细</a></div>
+        <div class="wallet__nav-item"><a href="?type=0">支出明细</a></div>
+        <div class="wallet__nav-item"><a href="?type=1">收益明细</a></div>
       </nav>
-      <ul class="wallet__list">
+      <ul class="wallet__list hidden">
         <li class="wallet__item">
           <div class="wallet__wrap-1"><span class="wallet__wrap-2">赠币竞拍消费</span><span class="wallet__wrap-3">2017-10-8 18:58</span></div>
           <div class="wallet__wrap-1"><span class="wallet__wrap-4">已消费5赠币</span></div>
+        </li>
+      </ul>
+      <ul class="wallet__list hidden">
+        <li class="wallet__item">
+          <div class="wallet__wrap-1"><span class="wallet__wrap-2">竞拍所得</span><span class="wallet__wrap-3">2017-10-8 18:58</span></div>
+          <div class="wallet__wrap-1"><span class="wallet__wrap-5">已收益5赠币</span></div>
         </li>
       </ul>
     </div>
@@ -69,6 +75,7 @@
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/dialog.js"></script>
 <script src="./libs/fastclick.js"></script>
 <script src="./libs/iconfont.js"></script>
 <script src="./js/wallet.js"></script>

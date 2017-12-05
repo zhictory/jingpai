@@ -44,4 +44,47 @@
       color: #ff2d4a;
     }
   }
+  &__item {
+    box-sizing: border-box;
+    border-bottom: 1px solid #ebebeb;
+    padding: .2rem .3rem 0;
+    background: #fff;
+  }
+  &__list {
+    .goods-wrap {
+      display: flex;
+    }
+    .img-wrap {
+      width: 1.6rem;
+      height: 1.6rem;
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: bottom;
+      }
+    }
+    .info-wrap {
+      flex: 1;
+      margin-left: .1rem;
+      line-height: 0.5rem;
+      .time {
+        float: right;
+      }
+    }
+    .oper-wrap {
+      height: 1rem;
+      line-height: 1rem;
+      overflow: hidden;
+      a {
+        float: right;
+        margin: .2rem .4rem;
+        border: 1px solid #ff2d4a;
+        width: 2rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        color: #ff2d4a;
+      }
+    }
+  }
 }

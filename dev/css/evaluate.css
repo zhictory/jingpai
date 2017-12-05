@@ -121,6 +121,8 @@ body {
 
 .evaluate {
   background: #fff; }
+  .evaluate__list {
+    background: #fff; }
   .evaluate__link {
     position: absolute;
     width: 100%;

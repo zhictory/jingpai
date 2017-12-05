@@ -47,19 +47,61 @@
   </header>
 
     <nav class="order__nav">
-      <div class="order__nav-item order__nav-item--on"><a href="">全部</a></div>
-      <div class="order__nav-item"><a href="">待付款</a></div>
-      <div class="order__nav-item"><a href="">待签收</a></div>
-      <div class="order__nav-item"><a href="">待晒单</a></div>
+      <div class="order__nav-item"><a href="?type=0">全部</a></div>
+      <div class="order__nav-item"><a href="?type=1">待付款</a></div>
+      <div class="order__nav-item"><a href="?type=2">待签收</a></div>
+      <div class="order__nav-item"><a href="?type=3">待晒单</a></div>
     </nav>
-    <div class="none">
+    <div class="none hidden">
       暂无数据
       <div class="link"><a href="./list.html">去逛逛</a></div>
     </div>
+    <ul class="order__list">
+      <li class="order__item hidden" data-status="unpaid">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成交价：￥90.00</p>
+            <p>商品名称：ipad pro 10.5</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <a href="/recharge.html">去付款</a>
+        </div>
+      </li>
+      <li class="order__item hidden" data-status="shipping">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成交价：￥90.00</p>
+            <p>商品名称：ipad pro 10.5</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <a href="">确认收货</a>
+        </div>
+      </li>
+      <li class="order__item hidden" data-status="recieved">
+        <div class="goods-wrap">
+          <div class="img-wrap"><img src="http://www.yeedee.com.cn/upload/cffb628c-2738-4d51-833b-cefee792b47b.JPG" alt=""></div>
+          <div class="info-wrap">
+            <p>市场价：￥123.00 <span class="time">2017-10-8 19:16</span></p>
+            <p>成交价：￥90.00</p>
+            <p>商品名称：ipad pro 10.5</p>
+          </div>
+        </div>
+        <div class="oper-wrap">
+          <a href="/evaluate-mine.html">去晒单</a>
+        </div>
+      </li>
+    </ul>
   </section>
   <!-- script -->
   <script src="./libs/jquery-3.2.1.min.js"></script>
 <script src="./libs/TouchSlide.1.1.js"></script>
+<script src="./libs/dialog.js"></script>
 <script src="./libs/fastclick.js"></script>
 <script src="./libs/iconfont.js"></script>
 <script src="./js/order.js"></script>

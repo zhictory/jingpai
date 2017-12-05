@@ -10,6 +10,9 @@
 
 .evaluate {
   background: #fff;
+  &__list {
+    background: #fff;    
+  }
   &__link {
     position: absolute;
     width: 100%;
