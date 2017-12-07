@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*-----------------
+ * zhangzhensheng
+ * 2017-12-7
+ *-----------------*/
+@import '../../widgets/common';
+@import '../../widgets/nav';
+@import '../../widgets/header';
+
+.record {
+    &__list {
+    }
+    &__item {
+        border-bottom: 1px solid #ebebeb;
+        &--on {
+            color: #ff2d4a;
+        }
+        padding: 0 .2rem;
+        height: 1rem;
+        font-size: 0;
+        &:after {
+            content: '';
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        div {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.26rem;
+        }        
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: bottom;
+        }
+        .pic {
+            margin-right: .1rem;
+            width: .75rem;
+            height: .75rem;
+        }
+        .name {
+            width: 2.5rem;
+            text-align: left;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .status {
+            width: .75rem;
+        }
+        .address {
+            width: .75rem;
+        }
+        .price {
+            width: 2.25rem;
+            text-align: right;
+        }
+    }
+}

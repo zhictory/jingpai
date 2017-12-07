@@ -202,6 +202,9 @@ body {
         float: right;
         margin-right: .8rem;
         color: #8c8c8c; }
+      .item__record-tt a {
+        display: block;
+        color: #000; }
       .item__record-tt:after {
         content: '>';
         position: absolute;
@@ -234,16 +237,6 @@ body {
       height: 0.8rem;
       line-height: 0.8rem;
       text-indent: 1em; }
-      .item__buy-tt:after {
-        content: '>';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 0.6rem;
-        color: #cac9ce;
-        font-size: 0.3rem;
-        text-align: center;
-        text-indent: 0; }
     .item__buy-ct {
       position: relative;
       display: none;
